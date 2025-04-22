@@ -1,0 +1,100 @@
+.line {
+  line-height: 40px;
+  text-align: center;
+}
+
+/* 애니메이션 */
+
+.line {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.5s ease;
+}
+
+.line.show {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+  margin-bottom: 40px;
+}
+
+.note {
+  padding: 50px 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu-icon {
+    align-self: flex-end;
+  }
+
+  .dropdown {
+    top: 50px;
+    right: 10px;
+    width: 100%;
+  }
+
+  .dropdown a {
+    padding: 12px;
+    font-size: 16px;
+  }
+
+  .submain {
+    padding: 0 20px;
+  }
+
+  .tech-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 0 10px;
+  }
+
+  .tech-card {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .slider {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .slider img {
+    width: 100%;
+    height: auto;
+  }
+
+  object {
+    width: 100% !important;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  h3 {
+    font-size: 22px;
+  }
+
+  h4,
+  h5 {
+    font-size: 18px;
+  }
+
+  .example {
+    margin: 20px 0;
+    padding: 10px;
+  }
+
+  .note {
+    padding: 20px;
+  }
+}
